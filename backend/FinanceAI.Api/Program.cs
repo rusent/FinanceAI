@@ -10,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.Services.AddProblemDetails();
+
 var connectionString = builder.Configuration.GetConnectionString("FinanceAIDatabase");
 if (string.IsNullOrWhiteSpace(connectionString))
 {
@@ -30,6 +32,7 @@ builder.Services.AddScoped<
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+app.UseExceptionHandler();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -51,3 +54,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+public partial class Program { }
+
