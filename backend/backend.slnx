@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="FinanceAI.Api/FinanceAI.Api.csproj" />
+  <Project Path="FinanceAI.Business/FinanceAI.Business.csproj" />
+  <Project Path="FinanceAI.DataAccess/FinanceAI.DataAccess.csproj" />
+  <Project Path="FinanceAI.Entities/FinanceAI.Entities.csproj" />
+</Solution>
