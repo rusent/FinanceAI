@@ -1,8 +1,10 @@
 ﻿using FinanceAI.Business.Interfaces;
+using FinanceAI.Entities;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Moq;
 using System.Net;
 
 namespace FinanceAI.IntegrationTests;
@@ -12,12 +14,31 @@ public class ExceptionHandlingTests
     [Fact]
     public async Task GetTransaction_WhenIdDoesNotExist_ReturnsNotFound()
     {
-        await using var factory = new WebApplicationFactory<Program>();
+        await using var factory = new WebApplicationFactory<Program>()
+            .WithWebHostBuilder(builder =>
+            {
+                builder.ConfigureTestServices(services =>
+                {
+                    services.RemoveAll<ITransactionService>();
+
+                    services.AddScoped<ITransactionService>(provider =>
+                    {
+                        var service = new Mock<ITransactionService>();
+
+                        service.Setup(x => x.GetByIdAsync(
+                                It.IsAny<Guid>(),
+                                It.IsAny<CancellationToken>()))
+                            .ReturnsAsync((Transaction?)null);
+
+                        return service.Object;
+                    });
+                });
+            });
+
         using var client = factory.CreateClient();
 
-        var id = Guid.NewGuid();
-
-        var response = await client.GetAsync($"/api/Transactions/{id}");
+        var response = await client.GetAsync(
+            $"/api/Transactions/{Guid.NewGuid()}");
 
         Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
     }
