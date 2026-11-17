@@ -172,33 +172,33 @@ Contains domain entities shared across the application.
 
 HTTP Request
 
-&#x20;    |
+     |
 
-&#x20;    v
+     v
 
 TransactionsController
 
-&#x20;    |
+     |
 
-&#x20;    v
+     v
 
 TransactionService
 
-&#x20;    |
+     |
 
-&#x20;    v
+     v
 
 TransactionRepository
 
-&#x20;    |
+     |
 
-&#x20;    v
+     v
 
 FinanceAIDbContext
 
-&#x20;    |
+     |
 
-&#x20;    v
+     v
 
 PostgreSQL
 
