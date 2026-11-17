@@ -72,25 +72,25 @@ The following technologies are part of the technical roadmap and are not yet imp
 
 
 
-\- **Frontend:** Angular and TypeScript
+- **Frontend:** Angular and TypeScript
 
-\- **Authentication:** JWT-based authentication and authorization
+- **Authentication:** JWT-based authentication and authorization
 
-\- **Testing:** Unit and integration tests
+- **Testing:** Unit and integration tests
 
-\- **Containerization:** Docker
+- **Containerization:** Docker
 
-\- **CI/CD:** GitHub Actions
+- **CI/CD:** GitHub Actions
 
-\- **Caching:** Redis, where justified by performance requirements
+- **Caching:** Redis, where justified by performance requirements
 
-\- **Messaging:** RabbitMQ, where asynchronous workflows require it
+- **Messaging:** RabbitMQ, where asynchronous workflows require it
 
-\- **AI Integration:** LLM integration and structured tool calling
+- **AI Integration:** LLM integration and structured tool calling
 
-\- **Agentic Workflows:** Controlled financial assistant operations
+- **Agentic Workflows:** Controlled financial assistant operations
 
-\- **Interoperability:** Model Context Protocol (MCP)
+- **Interoperability:** Model Context Protocol (MCP)
 
 
 
@@ -218,21 +218,21 @@ The current backend includes:
 
 
 
-\- Transaction entity and persistence model
+- Transaction entity and persistence model
 
-\- Transaction repository abstraction
+- Transaction repository abstraction
 
-\- Transaction application service
+- Transaction application service
 
-\- Transaction API controller
+- Transaction API controller
 
-\- PostgreSQL integration through EF Core
+- PostgreSQL integration through EF Core
 
-\- Initial database migration
+- Initial database migration
 
-\- Dependency injection configuration
+- Dependency injection configuration
 
-\- Asynchronous transaction operations
+- Asynchronous transaction operations
 
 
 
@@ -248,23 +248,23 @@ The API currently supports transaction creation, retrieval, and deletion operati
 
 
 
-\- \[x] Initialize the .NET backend solution
+- [x] Initialize the .NET backend solution
 
-\- \[x] Establish the initial layered architecture
+- [x] Establish the initial layered architecture
 
-\- \[x] Configure PostgreSQL and EF Core
+- [x] Configure PostgreSQL and EF Core
 
-\- \[x] Create the transaction persistence model
+- [x] Create the transaction persistence model
 
-\- \[x] Implement initial transaction endpoints
+- [x] Implement initial transaction endpoints
 
-\- \[ ] Introduce consistent validation and error handling
+- [ ] Introduce consistent validation and error handling
 
-\- \[ ] Add authentication and user-level data isolation
+- [ ] Add authentication and user-level data isolation
 
-\- \[ ] Implement automated tests
+- [ ] Implement automated tests
 
-\- \[ ] Expand income and expense management
+- [ ] Expand income and expense management
 
 
 
@@ -272,15 +272,15 @@ The API currently supports transaction creation, retrieval, and deletion operati
 
 
 
-\- \[ ] Budget management
+- [ ] Budget management
 
-\- \[ ] Spending categorization and summaries
+- [ ] Spending categorization and summaries
 
-\- \[ ] Financial reporting
+- [ ] Financial reporting
 
-\- \[ ] Scenario simulations, including installment-based spending
+- [ ] Scenario simulations, including installment-based spending
 
-\- \[ ] Financial insights and explainable calculations
+- [ ] Financial insights and explainable calculations
 
 
 
@@ -288,19 +288,19 @@ The API currently supports transaction creation, retrieval, and deletion operati
 
 
 
-\- \[ ] Integrate an LLM through a provider-agnostic abstraction
+- [ ] Integrate an LLM through a provider-agnostic abstraction
 
-\- \[ ] Implement structured tool calling
+- [ ] Implement structured tool calling
 
-\- \[ ] Enable read-only financial analysis tools
+- [ ] Enable read-only financial analysis tools
 
-\- \[ ] Ground AI responses in application data
+- [ ] Ground AI responses in application data
 
-\- \[ ] Add evaluation and observability mechanisms
+- [ ] Add evaluation and observability mechanisms
 
-\- \[ ] Introduce approval-controlled operations
+- [ ] Introduce approval-controlled operations
 
-\- \[ ] Explore MCP-based tool interoperability
+- [ ] Explore MCP-based tool interoperability
 
 
 
@@ -308,15 +308,15 @@ The API currently supports transaction creation, retrieval, and deletion operati
 
 
 
-\- \[ ] Build an Angular frontend
+- [ ] Build an Angular frontend
 
-\- \[ ] Introduce containerized development
+- [ ] Introduce containerized development
 
-\- \[ ] Establish CI/CD pipelines
+- [ ] Establish CI/CD pipelines
 
-\- \[ ] Add operational monitoring
+- [ ] Add operational monitoring
 
-\- \[ ] Improve performance and deployment readiness
+- [ ] Improve performance and deployment readiness
 
 
 
@@ -336,19 +336,19 @@ Development principles include:
 
 
 
-\- Never commit credentials or API keys to source control
+- Never commit credentials or API keys to source control
 
-\- Keep sensitive configuration outside committed source files
+- Keep sensitive configuration outside committed source files
 
-\- Validate incoming data
+- Validate incoming data
 
-\- Enforce authorization and user-level data isolation before supporting multiple users
+- Enforce authorization and user-level data isolation before supporting multiple users
 
-\- Minimize sensitive information in logs
+- Minimize sensitive information in logs
 
-\- Require explicit user approval for AI-initiated write operations
+- Require explicit user approval for AI-initiated write operations
 
-\- Treat AI-generated outputs as untrusted until validated
+- Treat AI-generated outputs as untrusted until validated
 
 
 
@@ -392,11 +392,11 @@ Financial calculations and access control will remain under application control 
 
 
 
-\- .NET 10 SDK
+- .NET 10 SDK
 
-\- PostgreSQL
+- PostgreSQL
 
-\- Visual Studio or another .NET-compatible development environment
+- Visual Studio or another .NET-compatible development environment
 
 
 
@@ -458,21 +458,21 @@ The project aims to follow these engineering practices as development progresses
 
 
 
-\- Small, focused commits
+- Small, focused commits
 
-\- Clear separation of responsibilities
+- Clear separation of responsibilities
 
-\- Dependency injection
+- Dependency injection
 
-\- Asynchronous I/O
+- Asynchronous I/O
 
-\- Code review and maintainability
+- Code review and maintainability
 
-\- Automated testing
+- Automated testing
 
-\- Security-conscious configuration
+- Security-conscious configuration
 
-\- Documentation of meaningful architectural decisions
+- Documentation of meaningful architectural decisions
 
 
 
