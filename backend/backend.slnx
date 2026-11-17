@@ -3,4 +3,5 @@
   <Project Path="FinanceAI.Business/FinanceAI.Business.csproj" />
   <Project Path="FinanceAI.DataAccess/FinanceAI.DataAccess.csproj" />
   <Project Path="FinanceAI.Entities/FinanceAI.Entities.csproj" />
+  <Project Path="FinanceAI.Tests/FinanceAI.Tests.csproj" Id="201254e5-af08-41fe-834f-0411c7d9c6ba" />
 </Solution>
