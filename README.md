@@ -1,8 +1,8 @@
-\# FinanceAI
+# FinanceAI
 
 
 
-\*\*Intelligent Financial Decision Platform\*\*
+**Intelligent Financial Decision Platform**
 
 
 
@@ -18,11 +18,11 @@ FinanceAI is being developed incrementally, with an emphasis on maintainable arc
 
 
 
-\## Project Status
+## Project Status
 
 
 
-\*\*Status: Early Development — Backend Foundation\*\*
+**Status: Early Development — Backend Foundation**
 
 
 
@@ -34,11 +34,11 @@ AI capabilities, authentication, budgeting, financial simulations, and the front
 
 
 
-\## Technology Stack
+## Technology Stack
 
 
 
-\### Current Implementation
+### Current Implementation
 
 
 
@@ -64,7 +64,7 @@ AI capabilities, authentication, budgeting, financial simulations, and the front
 
 
 
-\### Planned Technologies
+### Planned Technologies
 
 
 
@@ -72,25 +72,25 @@ The following technologies are part of the technical roadmap and are not yet imp
 
 
 
-\- \*\*Frontend:\*\* Angular and TypeScript
+\- **Frontend:** Angular and TypeScript
 
-\- \*\*Authentication:\*\* JWT-based authentication and authorization
+\- **Authentication:** JWT-based authentication and authorization
 
-\- \*\*Testing:\*\* Unit and integration tests
+\- **Testing:** Unit and integration tests
 
-\- \*\*Containerization:\*\* Docker
+\- **Containerization:** Docker
 
-\- \*\*CI/CD:\*\* GitHub Actions
+\- **CI/CD:** GitHub Actions
 
-\- \*\*Caching:\*\* Redis, where justified by performance requirements
+\- **Caching:** Redis, where justified by performance requirements
 
-\- \*\*Messaging:\*\* RabbitMQ, where asynchronous workflows require it
+\- **Messaging:** RabbitMQ, where asynchronous workflows require it
 
-\- \*\*AI Integration:\*\* LLM integration and structured tool calling
+\- **AI Integration:** LLM integration and structured tool calling
 
-\- \*\*Agentic Workflows:\*\* Controlled financial assistant operations
+\- **Agentic Workflows:** Controlled financial assistant operations
 
-\- \*\*Interoperability:\*\* Model Context Protocol (MCP)
+\- **Interoperability:** Model Context Protocol (MCP)
 
 
 
@@ -98,7 +98,7 @@ Technology choices will be evaluated against actual product requirements rather 
 
 
 
-\## Current Architecture
+## Current Architecture
 
 
 
@@ -128,11 +128,11 @@ FinanceAI/
 
 
 
-\### Layer Responsibilities
+### Layer Responsibilities
 
 
 
-\*\*FinanceAI.Api\*\*
+**FinanceAI.Api**
 
 
 
@@ -140,7 +140,7 @@ Exposes HTTP endpoints, handles incoming requests, and coordinates application o
 
 
 
-\*\*FinanceAI.Business\*\*
+**FinanceAI.Business**
 
 
 
@@ -148,7 +148,7 @@ Contains application services and interfaces used to coordinate transaction oper
 
 
 
-\*\*FinanceAI.DataAccess\*\*
+**FinanceAI.DataAccess**
 
 
 
@@ -156,7 +156,7 @@ Implements persistence through Entity Framework Core, including the database con
 
 
 
-\*\*FinanceAI.Entities\*\*
+**FinanceAI.Entities**
 
 
 
@@ -164,7 +164,7 @@ Contains domain entities shared across the application.
 
 
 
-\### Transaction Request Flow
+### Transaction Request Flow
 
 
 
@@ -210,7 +210,7 @@ The architecture will evolve as domain complexity and product requirements incre
 
 
 
-\## Implemented Capabilities
+## Implemented Capabilities
 
 
 
@@ -240,11 +240,11 @@ The API currently supports transaction creation, retrieval, and deletion operati
 
 
 
-\## Development Roadmap
+## Development Roadmap
 
 
 
-\### Phase 1 — Financial Backend Foundation
+### Phase 1 — Financial Backend Foundation
 
 
 
@@ -268,7 +268,7 @@ The API currently supports transaction creation, retrieval, and deletion operati
 
 
 
-\### Phase 2 — Financial Intelligence
+### Phase 2 — Financial Intelligence
 
 
 
@@ -284,7 +284,7 @@ The API currently supports transaction creation, retrieval, and deletion operati
 
 
 
-\### Phase 3 — AI-Powered Financial Assistant
+### Phase 3 — AI-Powered Financial Assistant
 
 
 
@@ -304,7 +304,7 @@ The API currently supports transaction creation, retrieval, and deletion operati
 
 
 
-\### Phase 4 — Product Experience and Operations
+### Phase 4 — Product Experience and Operations
 
 
 
@@ -324,7 +324,7 @@ The roadmap is subject to change as implementation and architectural decisions e
 
 
 
-\## Security Principles
+## Security Principles
 
 
 
@@ -356,7 +356,7 @@ Authentication, authorization, and AI operation controls remain planned work.
 
 
 
-\## AI Engineering Approach
+## AI Engineering Approach
 
 
 
@@ -368,15 +368,15 @@ The intended design separates:
 
 
 
-1\. \*\*Financial domain logic:\*\* Deterministic calculations and business rules
+1\. **Financial domain logic:** Deterministic calculations and business rules
 
-2\. \*\*Application tools:\*\* Controlled operations exposed to the AI layer
+2\. **Application tools:** Controlled operations exposed to the AI layer
 
-3\. \*\*LLM orchestration:\*\* Interpretation, tool selection, and response generation
+3\. **LLM orchestration:** Interpretation, tool selection, and response generation
 
-4\. \*\*Authorization and approval:\*\* Enforcement of access rights and confirmation of sensitive operations
+4\. **Authorization and approval:** Enforcement of access rights and confirmation of sensitive operations
 
-5\. \*\*Evaluation and observability:\*\* Assessment of tool execution, response quality, and operational behavior
+5\. **Evaluation and observability:** Assessment of tool execution, response quality, and operational behavior
 
 
 
@@ -384,11 +384,11 @@ Financial calculations and access control will remain under application control 
 
 
 
-\## Getting Started
+## Getting Started
 
 
 
-\### Prerequisites
+### Prerequisites
 
 
 
@@ -400,7 +400,7 @@ Financial calculations and access control will remain under application control 
 
 
 
-\### Local Setup
+### Local Setup
 
 
 
@@ -450,7 +450,7 @@ Database setup and API verification instructions will be expanded as the project
 
 
 
-\## Engineering Practices
+## Engineering Practices
 
 
 
@@ -476,7 +476,7 @@ The project aims to follow these engineering practices as development progresses
 
 
 
-\## Disclaimer
+## Disclaimer
 
 
 
